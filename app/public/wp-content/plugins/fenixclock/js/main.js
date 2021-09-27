@@ -7,6 +7,31 @@ let overlayExistence = false;
 jQuery(document).ready(function () {
   timer = setTimeout(getDate, 2000);
 });
+jQuery(document).mousemove(function (e) {
+  clearTimeout(timer);
+  console.log('timout cleared');
+  if (overlayExistence) {
+    jQuery('#overlay').remove();
+    timer = setTimeout(getDate, 2000);
+    overlayExistence = false;
+  } else {
+    timer = setTimeout(getDate, 2000);
+    overlayExistence = false;
+  }
+});
+
+jQuery(document).keypress(function (e) {
+  clearTimeout(timer);
+  console.log('timout cleared');
+  if (overlayExistence) {
+    jQuery('#overlay').remove();
+    timer = setTimeout(getDate, 2000);
+    overlayExistence = false;
+  } else {
+    timer = setTimeout(getDate, 2000);
+    overlayExistence = false;
+  }
+});
 
 function getDate() {
   console.log('here');
