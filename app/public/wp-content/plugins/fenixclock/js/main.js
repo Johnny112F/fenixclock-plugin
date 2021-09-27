@@ -42,6 +42,7 @@ function getDate() {
   let month = today.getMonth() + 1;
   let day = today.getDate();
   let year = today.getFullYear();
+  let userInfo = getUserInfo();
   overlayExistence = true;
   if (hour < 12) {
     timeOfDay = 'AM';
@@ -61,6 +62,10 @@ function getDate() {
   let time = hour + ':' + minute + ':' + second + ' ' + timeOfDay;
   let str = 'Today is';
   let date = month + '/' + day + '/' + year;
+  //if username is there put name and email into format for HTML insertion.
+  let userDeets = userInfo.userName
+    ? userInfo.userName + '<br>' + userInfo.userEmail + '<br>'
+    : '';
 
   overlay = jQuery(
     '<div id="overlay"><div id="text">' +
@@ -70,7 +75,15 @@ function getDate() {
       '<br>' +
       date +
       '<br>' +
+      userDeets +
       '</div></div>'
   );
   jQuery('body').append(overlay);
+}
+//gets user info from the global userDetails object
+function getUserInfo() {
+  let userName = userDetails.current_user.data.display_name;
+  let userEmail = userDetails.current_user.data.user_email;
+  let info = { userEmail, userName };
+  return info;
 }
