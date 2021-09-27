@@ -87,3 +87,16 @@ function getUserInfo() {
   let info = { userEmail, userName };
   return info;
 }
+
+function makeDatabaseRequest() {
+  jQuery.ajax({
+    url: 'wp-admin/admin-ajax.php',
+    data: {
+      action: 'user_info',
+      "user_info": info,
+    },
+    success: (data) => {
+      console.log('in the ajax call');
+    },
+  });
+}
