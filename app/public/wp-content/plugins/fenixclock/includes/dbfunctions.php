@@ -3,6 +3,7 @@
 global $jal_db_version;
 $jal_db_version = '1.0';
 
+//create database table upon activating plugin.
 function jal_install()
 {
   global $wpdb;
@@ -27,6 +28,7 @@ function jal_install()
   add_option('jal_db_version', $jal_db_version);
 }
 
+//populate database table with dummy data.
 function jal_install_data()
 {
   global $wpdb;
@@ -46,6 +48,7 @@ function jal_install_data()
   );
 }
 
+//handles entering of data into table in response to AJAX query from the frontend.
 function insert_userinfo()
 {
   global $wpdb;
