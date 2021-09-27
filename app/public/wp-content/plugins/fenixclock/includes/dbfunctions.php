@@ -45,3 +45,27 @@ function jal_install_data()
     )
   );
 }
+
+function insert_userinfo()
+{
+  global $wpdb;
+  if (isset($_REQUEST)) {
+    $userinfo = $_REQUEST['user_info'];
+    header('Content-Type: application/json; charset=utf-8');
+
+    $table_name = $wpdb->prefix . 'fenixclockinfo';
+
+    $wpdb->insert(
+      $table_name,
+      array(
+        'time' => current_time('mysql', 'UTC'),
+        'email' => $userinfo['userEmail'],
+        'name' => $userinfo['userName']
+
+      )
+    );
+  }
+  die();
+}
+
+add_action('wp_ajax_user_info', 'insert_userinfo');

@@ -34,7 +34,17 @@ jQuery(document).keypress(function (e) {
 });
 
 function getDate() {
-  console.log('here');
+  let userInfo = getUserInfo();
+  jQuery.ajax({
+    url: 'wp-admin/admin-ajax.php',
+    data: {
+      action: 'user_info',
+      "user_info": userInfo,
+    },
+    success: (data) => {
+      console.log('in the ajax call');
+    },
+  });
   let today = new Date();
   let hour = today.getHours();
   let minute = today.getMinutes();
@@ -42,7 +52,6 @@ function getDate() {
   let month = today.getMonth() + 1;
   let day = today.getDate();
   let year = today.getFullYear();
-  let userInfo = getUserInfo();
   overlayExistence = true;
   if (hour < 12) {
     timeOfDay = 'AM';
@@ -86,17 +95,4 @@ function getUserInfo() {
   let userEmail = userDetails.current_user.data.user_email;
   let info = { userEmail, userName };
   return info;
-}
-
-function makeDatabaseRequest() {
-  jQuery.ajax({
-    url: 'wp-admin/admin-ajax.php',
-    data: {
-      action: 'user_info',
-      "user_info": info,
-    },
-    success: (data) => {
-      console.log('in the ajax call');
-    },
-  });
 }
