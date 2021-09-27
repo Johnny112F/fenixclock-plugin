@@ -18,6 +18,8 @@ require_once(plugin_dir_path(__FILE__) . '/includes/fenixclock-scripts.php');
 
 require_once(plugin_dir_path(__FILE__) . '/includes/dbfunctions.php');
 
+require_once(plugin_dir_path(__FILE__) . '/includes/popup-infopage.php');
+
 register_activation_hook(__FILE__, 'jal_install');
 
 register_activation_hook(__FILE__, 'jal_install_data');
