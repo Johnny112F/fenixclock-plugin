@@ -6,10 +6,6 @@ let overlayExistence = false;
 
 jQuery(document).ready(function () {
   timer = setTimeout(getDate, 2000);
-  // let clockInfo = createClockTime();
-  // let display = createClockDisplay(clockInfo);
-  // jQuery('body').append(overlay);
-  // startTicking();
 });
 
 function getDate() {
@@ -37,8 +33,6 @@ function getDate() {
     second = '0' + second;
   }
 
-  let userDeets = userName ? '<br>' + userName + '<br>' + userEmail : '';
-
   let time = hour + ':' + minute + ':' + second + ' ' + timeOfDay;
   let str = 'Today is';
   let date = month + '/' + day + '/' + year;
@@ -51,7 +45,6 @@ function getDate() {
       '<br>' +
       date +
       '<br>' +
-      userDeets +
       '</div></div>'
   );
   jQuery('body').append(overlay);
