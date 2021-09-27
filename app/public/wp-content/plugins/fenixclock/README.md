@@ -52,6 +52,14 @@ and drop the table 'fenixclockinfo' then deactivate and reactive the plugin to r
 -If you would like to view table info related to this plugin's behavior you can see the current table entries by clicking on
 the User Popup Info tab on the admin side menu. This tab should show immediately after activating the plugin.
 
+##DEMONSTRATION
+
+Here is a short demo video of activating the plugin and exploring and it's functionality and features.
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/50811190/134975083-55097506-5b6f-4981-b3ef-013baa06bd0a.gif)
+
+
+
 ## TODOS
 
 -Make User Info Popup page have a clean interface with buttons to show specific info in the table such as only showing users,
@@ -73,9 +81,6 @@ Currently, the creation of the overlay also handles the insertion of data into t
 
 -Add testing for frontend and backend i.e. unit tests, integrations tests, end to end....
 
-##DEMONSTRATION
-
-Check out this video of activating the plugin and exploring and it's functionality and features.
 
 ## Contributing
 
