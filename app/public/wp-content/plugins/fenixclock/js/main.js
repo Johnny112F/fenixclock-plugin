@@ -16,7 +16,7 @@ let overlayExistence = false;
 
 //on page load start both timers.
 jQuery(document).ready(function () {
-  timer = setTimeout(createOverlay, 10000);
+  timer = setTimeout(createOverlay, 1000);
 
   clockTime = setInterval(updateClock, 1000);
 });
@@ -27,10 +27,10 @@ jQuery(document).mousemove(function (e) {
   console.log('timout cleared');
   if (overlayExistence) {
     jQuery('#overlay').remove();
-    timer = setTimeout(createOverlay, 10000);
+    timer = setTimeout(createOverlay, 1000);
     overlayExistence = false;
   } else {
-    timer = setTimeout(createOverlay, 10000);
+    timer = setTimeout(createOverlay, 1000);
     overlayExistence = false;
   }
 });
@@ -41,10 +41,10 @@ jQuery(document).keypress(function (e) {
   console.log('timout cleared');
   if (overlayExistence) {
     jQuery('#overlay').remove();
-    timer = setTimeout(createOverlay, 10000);
+    timer = setTimeout(createOverlay, 1000);
     overlayExistence = false;
   } else {
-    timer = setTimeout(createOverlay, 10000);
+    timer = setTimeout(createOverlay, 1000);
     overlayExistence = false;
   }
 });
