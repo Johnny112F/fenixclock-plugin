@@ -65,10 +65,6 @@ Here is a short demo video of activating the plugin and exploring and it's funct
 -Make User Info Popup page have a clean interface with buttons to show specific info in the table such as only showing users,
 times, or emails. Also, add buttons or options to order data and show in a clean presentation within this admin page.
 
--Sanitize SQL input so that sql injection is an impossibility if the site is deployed. At this time for
-testing the site in local development this is not necessary but should absolutely be done if this plugin were
-to be used on a fully deployed site.
-
 -It would be nice to add a way for admin to adjust time of the overlays appearance and also potentially to choose whether they
 would like to keep the functionality of removing the overlay on user movements or to add an option for adding a button a user
 must click to make the overlay dissapear. Currently the functionality of the overlay with event listeners seems alright but there may
@@ -80,6 +76,11 @@ be room for improvement by attaching the listeners in another fashion.
 Currently, the creation of the overlay also handles the insertion of data into the table on the backend.
 
 -Add testing for frontend and backend i.e. unit tests, integrations tests, end to end....
+
+-Sanitize SQL inputs if form is used in user admin page so that sql injection is an 
+impossibility if the site is deployed. At this time for
+testing the site in local development this is not necessary but should absolutely be done if this plugin were
+to be used on a fully deployed site an if forms requiring sanitization are used.
 
 
 ## Contributing
