@@ -1,3 +1,4 @@
+//comment for demonstartion
 /*
   On page load a timer is set to trigger creation and appending of a clock overlay to the
   page. The appearance of the clock triggers insertion of user data and clock time into a 

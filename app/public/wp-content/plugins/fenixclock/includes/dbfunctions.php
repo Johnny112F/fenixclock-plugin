@@ -1,5 +1,5 @@
 <?php
-
+//commit for demo
 global $jal_db_version;
 $jal_db_version = '1.0';
 
