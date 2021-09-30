@@ -9,7 +9,8 @@ function fenixclock_add_scripts()
 
   wp_localize_script('fxclock-main-script', 'userDetails', array(
     'current_user' => wp_get_current_user()
-
+    
+  //make site url dynamic
   ));
 }
 
