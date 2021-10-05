@@ -54,10 +54,13 @@ jQuery(document).keypress(function (e) {
 //time data and userinfo, and appends clock overlay to page.
 function createOverlay() {
   let userInfo = getUserInfo();
-
+  console.log('This is the site url', siteUrl);
   //asynchronous call to enter userinfo and timestamp in database table.
+  jQuery.ajaxSetup({
+    url: siteUrl,
+  });
   jQuery.ajax({
-    url: 'wp-admin/admin-ajax.php',
+    url: siteUrl.ajax_url,
     data: {
       action: 'user_info',
       user_info: userInfo,

@@ -9,8 +9,15 @@ function fenixclock_add_scripts()
 
   wp_localize_script('fxclock-main-script', 'userDetails', array(
     'current_user' => wp_get_current_user()
-    
+  ));
   //make site url dynamic
+  function wp_get_current_url()
+  {
+    return home_url(site_url($_SERVER['REQUEST_URI']));
+  }
+
+  wp_localize_script('fxclock-main-script', 'siteUrl', array(
+    'ajax_url' => admin_url('admin-ajax.php')
   ));
 }
 

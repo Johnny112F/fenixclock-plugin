@@ -6,3 +6,67 @@
 [27-Sep-2021 19:40:33 UTC] WordPress database error Table 'local.wp_fenixclockinfo' doesn't exist for query SHOW FULL COLUMNS FROM `wp_fenixclockinfo` made by do_action('wp_ajax_user_info'), WP_Hook->do_action, WP_Hook->apply_filters, insert_userinfo
 [27-Sep-2021 19:40:36 UTC] WordPress database error Table 'local.wp_fenixclockinfo' doesn't exist for query SHOW FULL COLUMNS FROM `wp_fenixclockinfo` made by do_action('wp_ajax_user_info'), WP_Hook->do_action, WP_Hook->apply_filters, insert_userinfo
 [29-Sep-2021 02:36:00 UTC] WordPress database error Table 'local.wp_fenixclockinfo' doesn't exist for query SELECT * FROM wp_fenixclockinfo made by do_action('toplevel_page_user-popup-info'), WP_Hook->do_action, WP_Hook->apply_filters, user_popup_info_page
+[02-Oct-2021 17:20:15 UTC] PHP Fatal error:  Cannot redeclare wp_is_application_passwords_available_for_user() (previously declared in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/user.php:4514) in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php on line 4580
+[02-Oct-2021 17:20:15 UTC] PHP Stack trace:
+[02-Oct-2021 17:20:15 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:0
+[02-Oct-2021 17:20:15 UTC] PHP   2. require() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:17
+[02-Oct-2021 17:20:15 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-blog-header.php:13
+[02-Oct-2021 17:20:15 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:20:15 UTC] PHP   5. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:20:15 UTC] PHP   6. include_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:409
+[02-Oct-2021 17:20:17 UTC] PHP Fatal error:  Cannot redeclare wp_is_application_passwords_available_for_user() (previously declared in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/user.php:4514) in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php on line 4580
+[02-Oct-2021 17:20:17 UTC] PHP Stack trace:
+[02-Oct-2021 17:20:17 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:0
+[02-Oct-2021 17:20:17 UTC] PHP   2. require() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:17
+[02-Oct-2021 17:20:17 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-blog-header.php:13
+[02-Oct-2021 17:20:17 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:20:17 UTC] PHP   5. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:20:17 UTC] PHP   6. include_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:409
+[02-Oct-2021 17:20:17 UTC] PHP Fatal error:  Cannot redeclare wp_is_application_passwords_available_for_user() (previously declared in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/user.php:4514) in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php on line 4580
+[02-Oct-2021 17:20:17 UTC] PHP Stack trace:
+[02-Oct-2021 17:20:17 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:0
+[02-Oct-2021 17:20:17 UTC] PHP   2. require() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/index.php:17
+[02-Oct-2021 17:20:17 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-blog-header.php:13
+[02-Oct-2021 17:20:17 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:20:17 UTC] PHP   5. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:20:17 UTC] PHP   6. include_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:409
+[02-Oct-2021 17:25:32 UTC] PHP Warning:  Cannot modify header information - headers already sent in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php on line 10
+[02-Oct-2021 17:25:32 UTC] PHP Stack trace:
+[02-Oct-2021 17:25:32 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:0
+[02-Oct-2021 17:25:32 UTC] PHP   2. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:44
+[02-Oct-2021 17:25:32 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:25:32 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:25:32 UTC] PHP   5. do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:578
+[02-Oct-2021 17:25:32 UTC] PHP   6. WP_Hook->do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/plugin.php:470
+[02-Oct-2021 17:25:32 UTC] PHP   7. WP_Hook->apply_filters() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:327
+[02-Oct-2021 17:25:32 UTC] PHP   8. force_login() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:303
+[02-Oct-2021 17:25:32 UTC] PHP   9. header() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php:10
+[02-Oct-2021 17:27:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php on line 1340
+[02-Oct-2021 17:27:47 UTC] PHP Stack trace:
+[02-Oct-2021 17:27:47 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:0
+[02-Oct-2021 17:27:47 UTC] PHP   2. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:44
+[02-Oct-2021 17:27:47 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:27:47 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:27:47 UTC] PHP   5. do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:578
+[02-Oct-2021 17:27:47 UTC] PHP   6. WP_Hook->do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/plugin.php:470
+[02-Oct-2021 17:27:47 UTC] PHP   7. WP_Hook->apply_filters() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:327
+[02-Oct-2021 17:27:47 UTC] PHP   8. v_forcelogin() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:303
+[02-Oct-2021 17:27:47 UTC] PHP   9. wp_safe_redirect() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php:17
+[02-Oct-2021 17:27:47 UTC] PHP  10. wp_redirect() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php:1448
+[02-Oct-2021 17:27:47 UTC] PHP  11. header() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php:1340
+[02-Oct-2021 17:27:47 UTC] PHP Warning:  Cannot modify header information - headers already sent in /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php on line 1343
+[02-Oct-2021 17:27:47 UTC] PHP Stack trace:
+[02-Oct-2021 17:27:47 UTC] PHP   1. {main}() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:0
+[02-Oct-2021 17:27:47 UTC] PHP   2. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-cron.php:44
+[02-Oct-2021 17:27:47 UTC] PHP   3. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-load.php:50
+[02-Oct-2021 17:27:47 UTC] PHP   4. require_once() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-config.php:77
+[02-Oct-2021 17:27:47 UTC] PHP   5. do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-settings.php:578
+[02-Oct-2021 17:27:47 UTC] PHP   6. WP_Hook->do_action() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/plugin.php:470
+[02-Oct-2021 17:27:47 UTC] PHP   7. WP_Hook->apply_filters() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:327
+[02-Oct-2021 17:27:47 UTC] PHP   8. v_forcelogin() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/class-wp-hook.php:303
+[02-Oct-2021 17:27:47 UTC] PHP   9. wp_safe_redirect() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-content/plugins/fenixclock/includes/userauth.php:17
+[02-Oct-2021 17:27:47 UTC] PHP  10. wp_redirect() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php:1448
+[02-Oct-2021 17:27:47 UTC] PHP  11. header() /Users/johnathanraiss/Local Sites/fenixclockplugin/app/public/wp-includes/pluggable.php:1343
+[03-Oct-2021 00:58:26 UTC] WordPress database error Column 'email' cannot be null for query INSERT INTO `wp_fenixclockinfo` (`time`, `email`, `name`) VALUES ('2021-10-03 00:58:26', NULL, NULL) made by do_action('wp_ajax_user_info'), WP_Hook->do_action, WP_Hook->apply_filters, insert_userinfo
+[03-Oct-2021 00:58:28 UTC] WordPress database error Column 'email' cannot be null for query INSERT INTO `wp_fenixclockinfo` (`time`, `email`, `name`) VALUES ('2021-10-03 00:58:28', NULL, NULL) made by do_action('wp_ajax_user_info'), WP_Hook->do_action, WP_Hook->apply_filters, insert_userinfo
+[03-Oct-2021 00:58:42 UTC] WordPress database error Column 'email' cannot be null for query INSERT INTO `wp_fenixclockinfo` (`time`, `email`, `name`) VALUES ('2021-10-03 00:58:42', NULL, NULL) made by do_action('wp_ajax_user_info'), WP_Hook->do_action, WP_Hook->apply_filters, insert_userinfo
