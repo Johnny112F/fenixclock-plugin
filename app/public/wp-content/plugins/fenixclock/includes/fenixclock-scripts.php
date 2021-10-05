@@ -17,7 +17,8 @@ function fenixclock_add_scripts()
   }
 
   wp_localize_script('fxclock-main-script', 'siteUrl', array(
-    'ajax_url' => admin_url('admin-ajax.php')
+    'ajax_url' => admin_url('admin-ajax.php'),
+    'nonce' => wp_create_nonce('nonce_name')
   ));
 }
 

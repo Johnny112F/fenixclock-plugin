@@ -64,6 +64,7 @@ function createOverlay() {
     data: {
       action: 'user_info',
       user_info: userInfo,
+      _ajax_nonce: siteUrl.nonce,
     },
     success: (data) => {
       console.log('in the ajax call');

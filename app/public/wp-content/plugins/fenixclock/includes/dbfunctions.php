@@ -53,6 +53,7 @@ function insert_userinfo()
 {
   global $wpdb;
   if (isset($_REQUEST)) {
+    check_ajax_referer('nonce_name');
     $userinfo = $_REQUEST['user_info'];
     header('Content-Type: application/json; charset=utf-8');
 
